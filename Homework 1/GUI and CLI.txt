@@ -1,0 +1,1 @@
+GUI is called the Graphical User Interfaces. It a directories or files that allow us to access. CLI is Command-Line Interfaces is a control I think that allow us to search for certain files or things on our computer. It much quicker to look for files with commands.
