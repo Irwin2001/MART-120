@@ -1,0 +1,86 @@
+<html>
+<title>Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="mainstyle.css">
+
+<head>
+    <h1>Contact Us</h1>
+
+    <script>
+        function checkboxes() {
+            var isValid = true;
+
+            
+            var firstName = document.getElementById("fName").value;
+            if (firstName === "") {
+                document.getElementById("fName").focus();
+                document.getElementById("fName").style.backgroundColor = "red";
+                document.getElementById("fNameMessage").innerHTML = "* Required";
+                document.getElementById("fNameMessage").style.color = "red";
+                isValid = false;
+            
+            }
+            
+            var lastName = document.getElementById("lName").value;
+            if (lastName === "") {
+                document.getElementById("lName").focus();
+                document.getElementById("lName").style.backgroundColor = "red";
+                document.getElementById("lNameMessage").innerHTML = "* Required";
+                document.getElementById("lNameMessage").style.color = "red";
+                isValid = false;
+            
+            }
+            var email = document.getElementById("Email").value;
+            if (email === "") {
+                 document.getElementById("Email").focus();
+                document.getElementById("Email").style.backgroundColor = "red";
+                document.getElementById("EmailMessage").innerHTML = "* Required";
+                document.getElementById("EmailMessage").style.color = "red";
+                isValid = false;
+            }
+        
+
+           
+            {
+                var lastName = document.getElementById("lName").value;
+                window.alert("Thank you " + firstName + " " + lastName);
+            }
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+        <h3>Information</h3>
+   
+       &nbsp; First Name: <input type="text" id="fName"><br>
+       &nbsp; Last Name: <input type="text" id="lName"><br>
+       &nbsp; Email: <input type="text" id="Email"><br>
+
+       &nbsp; You are agreeing to help me with this assignment? <br>
+       &nbsp; <input type="radio" name="Yes" id="Yes"> Yes
+       &nbsp; <input type="radio" name="No" id="No"> No<br>
+       <br>
+
+
+       &nbsp; <button id="mySubmit" onclick="return checkboxes();" 
+        class="btn btn-primary">Submit</button> <br>
+        <div id="message"></div>
+
+
+    <p><a href="C:\Users\sasuk\Desktop\Creative Coding\Irwin Teurn.html">Main Page</a></p>
+    <p><a href="C:\Users\sasuk\Desktop\Creative Coding\Irwin Page 2.html">Short Story</a></p>
+</body>
+
+</html>
